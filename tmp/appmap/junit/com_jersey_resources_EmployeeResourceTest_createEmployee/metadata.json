@@ -1,0 +1,28 @@
+{
+  "name": "Employee resource create employee",
+  "app": "serializationcompare",
+  "language": {
+    "name": "java",
+    "version": "17.0.8.1+1",
+    "engine": "OpenJDK 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "junit",
+    "type": "tests"
+  },
+  "recording": {
+    "defined_class": "com.jersey.resources.EmployeeResourceTest",
+    "method_id": "createEmployee"
+  },
+  "source_location": "com/jersey/resources/EmployeeResourceTest.java:41",
+  "framework": {},
+  "test_status": "failed",
+  "exception": {
+    "class": "jakarta.ws.rs.ProcessingException",
+    "message": "java.net.SocketTimeoutException: Read timed out"
+  }
+}

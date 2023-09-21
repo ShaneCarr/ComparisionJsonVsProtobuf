@@ -1,0 +1,48 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createGroup",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/jersey/groups/resources/GroupResource.java:36"
+                      }
+                    ],
+                    "name": "GroupResource",
+                    "type": "class"
+                  }
+                ],
+                "name": "resources",
+                "type": "package"
+              }
+            ],
+            "name": "groups",
+            "type": "package"
+          }
+        ],
+        "name": "jersey",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/v1/groups"
+      }
+    ]
+  }
+]

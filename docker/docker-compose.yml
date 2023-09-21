@@ -1,0 +1,22 @@
+services:
+  veritas:
+    build: ../
+    depends_on:
+      - postgres_serialization
+    environment:
+      - YAMMER_DEV_MODE=TRUE
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    links:
+      - "postgres_serialization:postgres"
+    volumes:
+      - ./logs:/home/app-user/logs
+  postgres_veritas:
+    image: postgres
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=test
+    ports:
+      - "5432:5432"

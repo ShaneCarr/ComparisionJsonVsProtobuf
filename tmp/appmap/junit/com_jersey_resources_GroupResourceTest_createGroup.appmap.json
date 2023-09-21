@@ -1,0 +1,209 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "36",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 76
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "36",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "thread_id": 76
+    },
+    {
+      "defined_class": "com.jersey.groups.resources.GroupResource",
+      "event": "call",
+      "id": 3,
+      "lineno": 36,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 1443777209,
+          "value": "com.jersey.groups.models.Group@560e4ab9"
+        }
+      ],
+      "path": "com/jersey/groups/resources/GroupResource.java",
+      "receiver": {
+        "class": "com.jersey.groups.resources.GroupResource",
+        "object_id": 2144202369,
+        "value": "com.jersey.groups.resources.GroupResource@7fcdee81"
+      },
+      "static": false,
+      "thread_id": 76
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 3
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 2
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 1
+    },
+    {
+      "defined_class": "com.jersey.resources.GroupResourceTest",
+      "event": "call",
+      "id": 7,
+      "lineno": 43,
+      "method_id": "createGroup",
+      "path": "com/jersey/resources/GroupResourceTest.java",
+      "receiver": {
+        "class": "com.jersey.resources.GroupResourceTest",
+        "object_id": 692720309,
+        "value": "com.jersey.resources.GroupResourceTest@294a12b5"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.5073394,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "jakarta.ws.rs.ProcessingException",
+          "lineno": 523,
+          "message": "java.net.SocketTimeoutException: Read timed out",
+          "object_id": 1464460851,
+          "path": "Apache5Connector.java"
+        },
+        {
+          "class": "java.net.SocketTimeoutException",
+          "lineno": -1,
+          "message": "Read timed out",
+          "object_id": 902026984
+        }
+      ],
+      "id": 8,
+      "parent_id": 7,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Group resource create group",
+    "app": "serializationcompare",
+    "language": {
+      "name": "java",
+      "version": "17.0.8.1+1",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "com.jersey.resources.GroupResourceTest",
+      "method_id": "createGroup"
+    },
+    "source_location": "com/jersey/resources/GroupResourceTest.java:43",
+    "framework": {},
+    "test_status": "failed",
+    "exception": {
+      "class": "jakarta.ws.rs.ProcessingException",
+      "message": "java.net.SocketTimeoutException: Read timed out"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "createGroup",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/resources/GroupResourceTest.java:43"
+                    }
+                  ],
+                  "name": "GroupResourceTest",
+                  "type": "class"
+                }
+              ],
+              "name": "resources",
+              "type": "package"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/resources/GroupResource.java:36"
+                        }
+                      ],
+                      "name": "GroupResource",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "resources",
+                  "type": "package"
+                }
+              ],
+              "name": "groups",
+              "type": "package"
+            }
+          ],
+          "name": "jersey",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/v1/groups"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+/home/shcarr/repo/bespokegroup/serializationcompare/src/test/java/com/jersey/resources/db/AppTestExtension.java
+/home/shcarr/repo/bespokegroup/serializationcompare/src/test/java/com/jersey/resources/GroupResourceTest.java
+/home/shcarr/repo/bespokegroup/serializationcompare/src/test/java/com/jersey/resources/db/PostgresTestContainer.java

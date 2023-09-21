@@ -1,0 +1,5 @@
+[
+  "com/jersey/model/Employee",
+  "com/jersey/repository/EmployeeRepository",
+  "com/jersey/resources/EmployeeResource"
+]

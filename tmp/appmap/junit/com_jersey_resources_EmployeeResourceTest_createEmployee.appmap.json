@@ -1,0 +1,341 @@
+{
+  "events": [
+    {
+      "defined_class": "com.jersey.resources.EmployeeResourceTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 41,
+      "method_id": "createEmployee",
+      "path": "com/jersey/resources/EmployeeResourceTest.java",
+      "receiver": {
+        "class": "com.jersey.resources.EmployeeResourceTest",
+        "object_id": 692827822,
+        "value": "com.jersey.resources.EmployeeResourceTest@294bb6ae"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "com.jersey.model.Employee",
+      "event": "call",
+      "id": 2,
+      "lineno": 15,
+      "method_id": "id",
+      "path": "com/jersey/model/Employee.java",
+      "receiver": {
+        "class": "com.jersey.model.Employee",
+        "object_id": 1309744648,
+        "value": "Employee[id=1, firstName=John, lastName=Doe, email=john.doe@example.com]"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00302794,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "return_value": {
+        "class": "java.lang.Integer",
+        "object_id": 468154998,
+        "value": "1"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "com.jersey.model.Employee",
+      "event": "call",
+      "id": 4,
+      "lineno": 19,
+      "method_id": "firstName",
+      "path": "com/jersey/model/Employee.java",
+      "receiver": {
+        "class": "com.jersey.model.Employee",
+        "object_id": 1309744648,
+        "value": "Employee[id=1, firstName=John, lastName=Doe, email=john.doe@example.com]"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000550299,
+      "event": "return",
+      "id": 5,
+      "parent_id": 4,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 1731877543,
+        "value": "John"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "com.jersey.model.Employee",
+      "event": "call",
+      "id": 6,
+      "lineno": 23,
+      "method_id": "lastName",
+      "path": "com/jersey/model/Employee.java",
+      "receiver": {
+        "class": "com.jersey.model.Employee",
+        "object_id": 1309744648,
+        "value": "Employee[id=1, firstName=John, lastName=Doe, email=john.doe@example.com]"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000137794,
+      "event": "return",
+      "id": 7,
+      "parent_id": 6,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 21247289,
+        "value": "Doe"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "com.jersey.model.Employee",
+      "event": "call",
+      "id": 8,
+      "lineno": 26,
+      "method_id": "email",
+      "path": "com/jersey/model/Employee.java",
+      "receiver": {
+        "class": "com.jersey.model.Employee",
+        "object_id": 1309744648,
+        "value": "Employee[id=1, firstName=John, lastName=Doe, email=john.doe@example.com]"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000039296,
+      "event": "return",
+      "id": 9,
+      "parent_id": 8,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 1528168968,
+        "value": "john.doe@example.com"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 851.0543,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "jakarta.ws.rs.ProcessingException",
+          "lineno": 523,
+          "message": "java.net.SocketTimeoutException: Read timed out",
+          "object_id": 2116330210,
+          "path": "Apache5Connector.java"
+        },
+        {
+          "class": "java.net.SocketTimeoutException",
+          "lineno": -1,
+          "message": "Read timed out",
+          "object_id": 942771559
+        }
+      ],
+      "id": 10,
+      "parent_id": 1,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "75",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/employees",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 11,
+      "thread_id": 76
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "75",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/employees",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 12,
+      "thread_id": 76
+    },
+    {
+      "defined_class": "com.jersey.resources.EmployeeResource",
+      "event": "call",
+      "id": 13,
+      "lineno": 47,
+      "method_id": "createEmployee",
+      "parameters": [
+        {
+          "class": "com.jersey.model.Employee",
+          "kind": "req",
+          "name": "employee",
+          "object_id": 70662240,
+          "value": "Employee[id=1, firstName=John, lastName=Doe, email=john.doe@example.com]"
+        }
+      ],
+      "path": "com/jersey/resources/EmployeeResource.java",
+      "receiver": {
+        "class": "com.jersey.resources.EmployeeResource",
+        "object_id": 1001663146,
+        "value": "com.jersey.resources.EmployeeResource@3bb42aaa"
+      },
+      "static": false,
+      "thread_id": 76
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 13
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 12
+    },
+    {
+      "event": "return",
+      "thread_id": 76,
+      "parent_id": 11
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Employee resource create employee",
+    "app": "serializationcompare",
+    "language": {
+      "name": "java",
+      "version": "17.0.8.1+1",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "com.jersey.resources.EmployeeResourceTest",
+      "method_id": "createEmployee"
+    },
+    "source_location": "com/jersey/resources/EmployeeResourceTest.java:41",
+    "framework": {},
+    "test_status": "failed",
+    "exception": {
+      "class": "jakarta.ws.rs.ProcessingException",
+      "message": "java.net.SocketTimeoutException: Read timed out"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "id",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/model/Employee.java:15"
+                    },
+                    {
+                      "name": "lastName",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/model/Employee.java:23"
+                    },
+                    {
+                      "name": "email",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/model/Employee.java:26"
+                    },
+                    {
+                      "name": "firstName",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/model/Employee.java:19"
+                    }
+                  ],
+                  "name": "Employee",
+                  "type": "class"
+                }
+              ],
+              "name": "model",
+              "type": "package"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "createEmployee",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/resources/EmployeeResourceTest.java:41"
+                    }
+                  ],
+                  "name": "EmployeeResourceTest",
+                  "type": "class"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "createEmployee",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/jersey/resources/EmployeeResource.java:47"
+                    }
+                  ],
+                  "name": "EmployeeResource",
+                  "type": "class"
+                }
+              ],
+              "name": "resources",
+              "type": "package"
+            }
+          ],
+          "name": "jersey",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /employees"
+        }
+      ]
+    }
+  ]
+}

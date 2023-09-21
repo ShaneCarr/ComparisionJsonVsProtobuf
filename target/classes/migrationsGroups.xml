@@ -1,0 +1,55 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <!-- Create the 'group_features' table -->
+    <changeSet id="create-group-features-table" author="your-name">
+        <createTable tableName="group_features">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="network_id" type="BIGINT"/>
+            <column name="group_id" type="BIGINT"/>
+            <column name="feature_name" type="VARCHAR(255)"/>
+            <column name="feature_type" type="SMALLINT"/>
+            <column name="created_at" type="TIMESTAMP"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="modified_at" type="TIMESTAMP"/>
+            <column name="modified_by" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Create the 'group_feature_configurations' table -->
+    <changeSet id="create-group-feature-configurations-table" author="your-name">
+        <createTable tableName="group_feature_configurations">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="feature_id" type="BIGINT"/>
+            <column name="feature_name" type="VARCHAR(255)"/>
+            <column name="privacy" type="BOOLEAN"/>
+            <column name="cover_image" type="VARCHAR(255)"/>
+            <column name="answers_feed_sort" type="SMALLINT"/>
+            <column name="answers_feed_filter" type="SMALLINT"/>
+            <column name="answers_publisher_topics_src" type="SMALLINT"/>
+            <column name="created_at" type="TIMESTAMP"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="modified_at" type="TIMESTAMP"/>
+            <column name="modified_by" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Create the 'group' table -->
+    <changeSet id="create-group-table" author="your-name">
+        <createTable tableName="group">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="officeid" type="BIGINT"/>
+            <!-- Add more columns for 'group' table as needed -->
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

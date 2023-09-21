@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "POST /employees",
+    "callee": "com/jersey"
+  }
+]

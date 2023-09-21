@@ -1,0 +1,90 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "id",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/model/Employee.java:15"
+                  },
+                  {
+                    "name": "lastName",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/model/Employee.java:23"
+                  },
+                  {
+                    "name": "email",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/model/Employee.java:26"
+                  },
+                  {
+                    "name": "firstName",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/model/Employee.java:19"
+                  }
+                ],
+                "name": "Employee",
+                "type": "class"
+              }
+            ],
+            "name": "model",
+            "type": "package"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "createEmployee",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/resources/EmployeeResourceTest.java:41"
+                  }
+                ],
+                "name": "EmployeeResourceTest",
+                "type": "class"
+              },
+              {
+                "children": [
+                  {
+                    "name": "createEmployee",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/jersey/resources/EmployeeResource.java:47"
+                  }
+                ],
+                "name": "EmployeeResource",
+                "type": "class"
+              }
+            ],
+            "name": "resources",
+            "type": "package"
+          }
+        ],
+        "name": "jersey",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /employees"
+      }
+    ]
+  }
+]
