@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PostgresTestContainer {
-    private static PostgreSQLContainer<?> db = new PostgreSQLContainer<>("postgres:9.6.9-alpine");
+    private static PostgreSQLContainer<?> db = new PostgreSQLContainer<>("postgres:9.6");
 
     private final String changeLogFile;
     private final Map<String, String> params = new HashMap<>();
@@ -35,6 +35,7 @@ public class PostgresTestContainer {
     public static PostgresTestContainer create() {
         return new PostgresTestContainer("migrations.xml")
                 .withParam("stamp.id", "1");
+                
     }
 
     private PostgresTestContainer(String changeLogFile) {

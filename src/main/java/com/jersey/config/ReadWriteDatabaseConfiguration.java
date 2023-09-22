@@ -6,6 +6,12 @@ import jakarta.validation.constraints.NotNull;
 public class ReadWriteDatabaseConfiguration {
 
   @NotEmpty
+  public String password;
+
+  @NotEmpty
+  public String user;
+
+  @NotEmpty
   private String jdbcUrl;
 
   @NotNull

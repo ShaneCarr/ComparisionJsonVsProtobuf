@@ -18,7 +18,7 @@
     "defined_class": "com.jersey.resources.GroupResourceTest",
     "method_id": "createGroup"
   },
-  "source_location": "com/jersey/resources/GroupResourceTest.java:43",
+  "source_location": "com/jersey/resources/GroupResourceTest.java:42",
   "framework": {},
   "test_status": "failed",
   "exception": {

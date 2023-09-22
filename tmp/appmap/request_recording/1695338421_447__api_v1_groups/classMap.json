@@ -8,24 +8,6 @@
               {
                 "children": [
                   {
-                    "name": "createGroup",
-                    "type": "function",
-                    "static": false,
-                    "location": "com/jersey/resources/GroupResourceTest.java:42"
-                  }
-                ],
-                "name": "GroupResourceTest",
-                "type": "class"
-              }
-            ],
-            "name": "resources",
-            "type": "package"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
                     "children": [
                       {
                         "name": "createGroup",

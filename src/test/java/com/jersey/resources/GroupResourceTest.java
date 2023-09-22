@@ -11,7 +11,6 @@ import jakarta.ws.rs.core.Response;
 import io.dropwizard.testing.junit5.DropwizardAppExtension;
 import com.jersey.resources.db.AppTestExtension;
 import jakarta.ws.rs.core.UriBuilder;
-import liquibase.pro.packaged.em;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -51,7 +50,6 @@ public class GroupResourceTest {
                 .post(Entity.entity(group, MediaType.APPLICATION_JSON_TYPE));
 
         assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
-        //assertEquals("/employees/1", response.getLocation().getPath());
     }
 
 

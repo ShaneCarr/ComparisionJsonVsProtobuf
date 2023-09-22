@@ -4,7 +4,7 @@
     "message": "java.net.SocketTimeoutException: Read timed out",
     "stack": [
       "Apache5Connector.java:523",
-      "com/jersey/resources/GroupResourceTest.java:43"
+      "com/jersey/resources/GroupResourceTest.java:42"
     ],
     "location": "Apache5Connector.java:523"
   },
@@ -12,7 +12,7 @@
     "class": "java.net.SocketTimeoutException",
     "message": "Read timed out",
     "stack": [
-      "com/jersey/resources/GroupResourceTest.java:43"
+      "com/jersey/resources/GroupResourceTest.java:42"
     ]
   }
 ]

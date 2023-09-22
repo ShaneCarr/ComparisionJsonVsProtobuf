@@ -1,0 +1,10 @@
+[
+  {
+    "class": "org.apache.commons.lang3.NotImplementedException",
+    "stack": [
+      "GroupResource.java:27",
+      "com/jersey/groups/resources/GroupResource.java:27"
+    ],
+    "location": "GroupResource.java:27"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/groups",
+    "parameters": "()",
+    "status": 500
+  }
+]

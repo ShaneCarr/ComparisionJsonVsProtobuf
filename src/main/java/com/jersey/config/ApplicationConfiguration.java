@@ -45,6 +45,18 @@ public class ApplicationConfiguration extends Configuration {
   private ReadWriteDatabaseConfiguration readWriteDatabaseConfiguration;
 
 
+  @Valid
+  @JsonProperty("dbpassword")
+  public String dbpassword;
+
+  @Valid
+  @JsonProperty("dbname")
+  public String dbname;
+
+  @Valid
+  @JsonProperty("dbuser")
+  public String dbuser;
+
   public ReadWriteDatabaseConfiguration getReadWriteDatabaseConfiguration() {
     return readWriteDatabaseConfiguration;
   }
