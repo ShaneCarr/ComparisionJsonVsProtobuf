@@ -14,15 +14,8 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.core.Response.Status;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Set;
 
 import org.apache.commons.lang3.NotImplementedException;
-
-import java.util.List;
 
 @Path("/api/v2/groups/{group_id}/configs")
 @Produces(MediaType.APPLICATION_JSON)
