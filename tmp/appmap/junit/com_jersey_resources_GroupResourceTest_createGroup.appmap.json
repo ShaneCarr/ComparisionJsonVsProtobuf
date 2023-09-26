@@ -7,7 +7,7 @@
           "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
           "Connection": "keep-alive",
           "Host": "localhost:8080",
-          "Content-Length": "36",
+          "Content-Length": "35",
           "Content-Type": "application/json"
         },
         "path_info": "/api/v1/groups",
@@ -15,7 +15,7 @@
         "request_method": "POST"
       },
       "id": 1,
-      "thread_id": 77
+      "thread_id": 79
     },
     {
       "event": "call",
@@ -24,7 +24,7 @@
           "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
           "Connection": "keep-alive",
           "Host": "localhost:8080",
-          "Content-Length": "36",
+          "Content-Length": "35",
           "Content-Type": "application/json"
         },
         "path_info": "/api/v1/groups",
@@ -32,82 +32,173 @@
         "request_method": "POST"
       },
       "id": 2,
-      "thread_id": 77
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.models.Group",
+      "event": "call",
+      "id": 3,
+      "lineno": 17,
+      "method_id": "setName",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1594356907,
+          "value": "name"
+        }
+      ],
+      "path": "com/jersey/groups/models/Group.java",
+      "receiver": {
+        "class": "com.jersey.groups.models.Group",
+        "object_id": 248935069,
+        "value": "com.jersey.groups.models.Group@ed6729d"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.0000439295,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.models.Group",
+      "event": "call",
+      "id": 5,
+      "lineno": 28,
+      "method_id": "setOfficeId",
+      "parameters": [
+        {
+          "class": "java.lang.Long",
+          "kind": "req",
+          "name": "officeId",
+          "object_id": 1636492253,
+          "value": "1"
+        }
+      ],
+      "path": "com/jersey/groups/models/Group.java",
+      "receiver": {
+        "class": "com.jersey.groups.models.Group",
+        "object_id": 248935069,
+        "value": "com.jersey.groups.models.Group@ed6729d"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.0000428646,
+      "event": "return",
+      "id": 6,
+      "parent_id": 5,
+      "thread_id": 79
     },
     {
       "defined_class": "com.jersey.groups.resources.GroupResource",
       "event": "call",
-      "id": 3,
-      "lineno": 25,
+      "id": 7,
+      "lineno": 35,
       "method_id": "createGroup",
       "parameters": [
         {
           "class": "com.jersey.groups.models.Group",
           "kind": "req",
           "name": "group",
-          "object_id": 607498572,
-          "value": "com.jersey.groups.models.Group@2435b14c"
+          "object_id": 248935069,
+          "value": "com.jersey.groups.models.Group@ed6729d"
         }
       ],
       "path": "com/jersey/groups/resources/GroupResource.java",
       "receiver": {
         "class": "com.jersey.groups.resources.GroupResource",
-        "object_id": 1092591817,
-        "value": "com.jersey.groups.resources.GroupResource@411fa0c9"
+        "object_id": 1609926577,
+        "value": "com.jersey.groups.resources.GroupResource@5ff587b1"
       },
       "static": false,
-      "thread_id": 77
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.repository.GroupRepository",
+      "event": "call",
+      "id": 8,
+      "lineno": 17,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 248935069,
+          "value": "com.jersey.groups.models.Group@ed6729d"
+        }
+      ],
+      "path": "com/jersey/groups/repository/GroupRepository.java",
+      "receiver": {
+        "class": "com.jersey.groups.repository.GroupRepository",
+        "object_id": 1153637855,
+        "value": "com.jersey.groups.repository.GroupRepository@44c31ddf"
+      },
+      "static": false,
+      "thread_id": 79
     },
     {
       "event": "return",
-      "thread_id": 77,
-      "parent_id": 3
+      "thread_id": 79,
+      "parent_id": 8
     },
     {
       "event": "return",
-      "thread_id": 77,
+      "thread_id": 79,
+      "parent_id": 7
+    },
+    {
+      "event": "return",
+      "thread_id": 79,
       "parent_id": 2
     },
     {
       "event": "return",
-      "thread_id": 77,
+      "thread_id": 79,
       "parent_id": 1
     },
     {
       "defined_class": "com.jersey.resources.GroupResourceTest",
       "event": "call",
-      "id": 7,
+      "id": 13,
       "lineno": 42,
       "method_id": "createGroup",
       "path": "com/jersey/resources/GroupResourceTest.java",
       "receiver": {
         "class": "com.jersey.resources.GroupResourceTest",
-        "object_id": 822068160,
-        "value": "com.jersey.resources.GroupResourceTest@30ffc3c0"
+        "object_id": 1862972704,
+        "value": "com.jersey.resources.GroupResourceTest@6f0ab520"
       },
       "static": false,
       "thread_id": 1
     },
     {
-      "elapsed": 1.2352201,
+      "elapsed": 0.5077774,
       "event": "return",
       "exceptions": [
         {
           "class": "jakarta.ws.rs.ProcessingException",
           "lineno": 523,
           "message": "java.net.SocketTimeoutException: Read timed out",
-          "object_id": 582962589,
+          "object_id": 579634511,
           "path": "Apache5Connector.java"
         },
         {
           "class": "java.net.SocketTimeoutException",
           "lineno": -1,
           "message": "Read timed out",
-          "object_id": 160632822
+          "object_id": 1203771863
         }
       ],
-      "id": 8,
-      "parent_id": 7,
+      "id": 14,
+      "parent_id": 13,
       "thread_id": 1
     }
   ],
@@ -150,6 +241,72 @@
                 {
                   "children": [
                     {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/resources/GroupResource.java:35"
+                        }
+                      ],
+                      "name": "GroupResource",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "resources",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/repository/GroupRepository.java:17"
+                        }
+                      ],
+                      "name": "GroupRepository",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "setName",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/models/Group.java:17"
+                        },
+                        {
+                          "name": "setOfficeId",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/models/Group.java:28"
+                        }
+                      ],
+                      "name": "Group",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "models",
+                  "type": "package"
+                }
+              ],
+              "name": "groups",
+              "type": "package"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
                       "name": "createGroup",
                       "type": "function",
                       "static": false,
@@ -161,30 +318,6 @@
                 }
               ],
               "name": "resources",
-              "type": "package"
-            },
-            {
-              "children": [
-                {
-                  "children": [
-                    {
-                      "children": [
-                        {
-                          "name": "createGroup",
-                          "type": "function",
-                          "static": false,
-                          "location": "com/jersey/groups/resources/GroupResource.java:25"
-                        }
-                      ],
-                      "name": "GroupResource",
-                      "type": "class"
-                    }
-                  ],
-                  "name": "resources",
-                  "type": "package"
-                }
-              ],
-              "name": "groups",
               "type": "package"
             }
           ],

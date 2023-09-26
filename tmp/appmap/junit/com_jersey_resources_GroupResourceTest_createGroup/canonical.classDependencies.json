@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "caller": "POST /api/v1/groups",
+    "callee": "com/jersey"
+  }
+]

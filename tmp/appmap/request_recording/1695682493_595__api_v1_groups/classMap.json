@@ -1,0 +1,100 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createGroup",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/jersey/groups/resources/GroupResource.java:35"
+                      }
+                    ],
+                    "name": "GroupResource",
+                    "type": "class"
+                  }
+                ],
+                "name": "resources",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createGroup",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/jersey/groups/repository/GroupRepository.java:17"
+                      }
+                    ],
+                    "name": "GroupRepository",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "setName",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/jersey/groups/models/Group.java:17"
+                      },
+                      {
+                        "name": "setOfficeId",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/jersey/groups/models/Group.java:28"
+                      }
+                    ],
+                    "name": "Group",
+                    "type": "class"
+                  }
+                ],
+                "name": "models",
+                "type": "package"
+              }
+            ],
+            "name": "groups",
+            "type": "package"
+          }
+        ],
+        "name": "jersey",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/v1/groups"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "/* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)"
+      }
+    ]
+  }
+]

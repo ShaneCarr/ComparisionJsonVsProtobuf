@@ -6,10 +6,26 @@ public class Group {
     @JsonProperty
     public Long id;
 
-    @JsonProperty
+    @JsonProperty("name")
     public String name;
 
-    @JsonProperty("office_id")
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @JsonProperty("officeId")
     public Long officeId;
+
+    public Long getOfficeId() {
+        return officeId;
+    }
+
+    public void setOfficeId(Long officeId) {
+        this.officeId = officeId;
+    }
 
 }

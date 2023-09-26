@@ -1,7 +1,8 @@
 package com.jersey.groups.repository;
 
-import com.jersey.groups.models.GroupDTO;
-import org.jdbi.v3.sqlobject.statement.BindBean;
+import com.jersey.groups.models.Group;
+
+import org.jdbi.v3.sqlobject.customizer.BindBean;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 
@@ -9,17 +10,17 @@ import java.util.List;
 
 public interface GroupDbo {
 
-    @SqlUpdate("INSERT INTO group (name, officeid) VALUES (:name, :officeId)")
-    void createGroup(@BindBean GroupDTO groupDTO);
+    @SqlUpdate("INSERT INTO public.group (name, officeid) VALUES (:name, :officeId)")
+    void createGroup(@BindBean Group group);
 
     @SqlUpdate("UPDATE group SET name = :name, officeid = :officeId WHERE id = :id")
-    void updateGroup(@BindBean GroupDTO groupDTO);
+    void updateGroup(@BindBean Group groupDTO);
 
     @SqlQuery("SELECT * FROM group WHERE id = :id")
-    GroupDTO getGroupById(long id);
+    Group getGroupById(long id);
 
     @SqlQuery("SELECT * FROM group")
-    List<GroupDTO> getAllGroups();
+    List<Group> getAllGroups();
 
     @SqlUpdate("DELETE FROM group WHERE id = :id")
     void deleteGroup(long id);

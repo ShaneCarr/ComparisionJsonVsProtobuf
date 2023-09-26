@@ -1,0 +1,260 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "36",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 79
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "36",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.resources.GroupResource",
+      "event": "call",
+      "id": 3,
+      "lineno": 35,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 62470899,
+          "value": "com.jersey.groups.models.Group@3b93af3"
+        }
+      ],
+      "path": "com/jersey/groups/resources/GroupResource.java",
+      "receiver": {
+        "class": "com.jersey.groups.resources.GroupResource",
+        "object_id": 837409741,
+        "value": "com.jersey.groups.resources.GroupResource@31e9dbcd"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.repository.GroupRepository",
+      "event": "call",
+      "id": 4,
+      "lineno": 17,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 62470899,
+          "value": "com.jersey.groups.models.Group@3b93af3"
+        }
+      ],
+      "path": "com/jersey/groups/repository/GroupRepository.java",
+      "receiver": {
+        "class": "com.jersey.groups.repository.GroupRepository",
+        "object_id": 1650425331,
+        "value": "com.jersey.groups.repository.GroupRepository@625f7df3"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "event": "call",
+      "id": 5,
+      "sql_query": {
+        "database_type": "PostgreSQL",
+        "sql": "/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (?, ?)"
+      },
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.004003542,
+      "event": "return",
+      "id": 6,
+      "parent_id": 5,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.15166678,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "org.jdbi.v3.core.statement.UnableToCreateStatementException",
+          "lineno": 170,
+          "message": "Missing named parameter 'name' in binding:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]} [statement:\"/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (:name, :officeId)\", arguments:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]}]",
+          "object_id": 922076960,
+          "path": "ArgumentBinder.java"
+        }
+      ],
+      "id": 7,
+      "parent_id": 4,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.151762,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "org.jdbi.v3.core.statement.UnableToCreateStatementException",
+          "lineno": 170,
+          "message": "Missing named parameter 'name' in binding:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]} [statement:\"/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (:name, :officeId)\", arguments:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]}]",
+          "object_id": 922076960,
+          "path": "ArgumentBinder.java"
+        }
+      ],
+      "id": 8,
+      "parent_id": 3,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.15694314,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Content-Length": "110",
+          "Date": "Mon, 25 Sep 2023 22:41:44 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 500
+      },
+      "id": 9,
+      "parent_id": 2,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.1572522,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Content-Length": "110",
+          "Date": "Mon, 25 Sep 2023 22:41:44 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 500
+      },
+      "id": 10,
+      "parent_id": 1,
+      "thread_id": 79
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /api/v1/groups (500) - 15:41:44.051",
+    "app": "serializationcompare",
+    "language": {
+      "name": "java",
+      "version": "17.0.8.1+1",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "request"
+    },
+    "recording": {},
+    "framework": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/resources/GroupResource.java:35"
+                        }
+                      ],
+                      "name": "GroupResource",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "resources",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/repository/GroupRepository.java:17"
+                        }
+                      ],
+                      "name": "GroupRepository",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                }
+              ],
+              "name": "groups",
+              "type": "package"
+            }
+          ],
+          "name": "jersey",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/v1/groups"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (?, ?)"
+        }
+      ]
+    }
+  ]
+}

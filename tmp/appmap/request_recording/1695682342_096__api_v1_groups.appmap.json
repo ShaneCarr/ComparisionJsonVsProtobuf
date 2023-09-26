@@ -1,0 +1,345 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "35",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 79
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "User-Agent": "Jersey/3.0.9 (Apache HttpClient 5.2.1)",
+          "Connection": "keep-alive",
+          "Host": "localhost:8080",
+          "Content-Length": "35",
+          "Content-Type": "application/json"
+        },
+        "path_info": "/api/v1/groups",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.models.Group",
+      "event": "call",
+      "id": 3,
+      "lineno": 17,
+      "method_id": "setName",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 1150354985,
+          "value": "name"
+        }
+      ],
+      "path": "com/jersey/groups/models/Group.java",
+      "receiver": {
+        "class": "com.jersey.groups.models.Group",
+        "object_id": 1433849313,
+        "value": "com.jersey.groups.models.Group@5576cde1"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.0000560833,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.models.Group",
+      "event": "call",
+      "id": 5,
+      "lineno": 28,
+      "method_id": "setOfficeId",
+      "parameters": [
+        {
+          "class": "java.lang.Long",
+          "kind": "req",
+          "name": "officeId",
+          "object_id": 740660501,
+          "value": "1"
+        }
+      ],
+      "path": "com/jersey/groups/models/Group.java",
+      "receiver": {
+        "class": "com.jersey.groups.models.Group",
+        "object_id": 1433849313,
+        "value": "com.jersey.groups.models.Group@5576cde1"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.0000470495,
+      "event": "return",
+      "id": 6,
+      "parent_id": 5,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.resources.GroupResource",
+      "event": "call",
+      "id": 7,
+      "lineno": 35,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 1433849313,
+          "value": "com.jersey.groups.models.Group@5576cde1"
+        }
+      ],
+      "path": "com/jersey/groups/resources/GroupResource.java",
+      "receiver": {
+        "class": "com.jersey.groups.resources.GroupResource",
+        "object_id": 390214749,
+        "value": "com.jersey.groups.resources.GroupResource@1742345d"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "defined_class": "com.jersey.groups.repository.GroupRepository",
+      "event": "call",
+      "id": 8,
+      "lineno": 17,
+      "method_id": "createGroup",
+      "parameters": [
+        {
+          "class": "com.jersey.groups.models.Group",
+          "kind": "req",
+          "name": "group",
+          "object_id": 1433849313,
+          "value": "com.jersey.groups.models.Group@5576cde1"
+        }
+      ],
+      "path": "com/jersey/groups/repository/GroupRepository.java",
+      "receiver": {
+        "class": "com.jersey.groups.repository.GroupRepository",
+        "object_id": 279844991,
+        "value": "com.jersey.groups.repository.GroupRepository@10ae187f"
+      },
+      "static": false,
+      "thread_id": 79
+    },
+    {
+      "event": "call",
+      "id": 9,
+      "sql_query": {
+        "database_type": "PostgreSQL",
+        "sql": "/* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)"
+      },
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.00404824,
+      "event": "return",
+      "id": 10,
+      "parent_id": 9,
+      "thread_id": 79
+    },
+    {
+      "event": "call",
+      "id": 11,
+      "sql_query": {
+        "database_type": "PostgreSQL",
+        "sql": "/* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)"
+      },
+      "thread_id": 79
+    },
+    {
+      "elapsed": 0.0000103766,
+      "event": "return",
+      "id": 12,
+      "parent_id": 11,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 1.732121,
+      "event": "return",
+      "id": 13,
+      "parent_id": 8,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 2.0605814,
+      "event": "return",
+      "id": 14,
+      "parent_id": 7,
+      "return_value": {
+        "class": "org.glassfish.jersey.message.internal.OutboundJaxrsResponse",
+        "object_id": 278598301,
+        "value": "OutboundJaxrsResponse{status=200, reason=OK, hasEntity=false, closed=false, buffered=false}"
+      },
+      "thread_id": 79
+    },
+    {
+      "elapsed": 2.0671287,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Date": "Mon, 25 Sep 2023 22:52:22 GMT"
+        },
+        "status": 200
+      },
+      "id": 15,
+      "parent_id": 2,
+      "thread_id": 79
+    },
+    {
+      "elapsed": 2.0675976,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Date": "Mon, 25 Sep 2023 22:52:22 GMT"
+        },
+        "status": 200
+      },
+      "id": 16,
+      "parent_id": 1,
+      "thread_id": 79
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /api/v1/groups (200) - 15:52:22.096",
+    "app": "serializationcompare",
+    "language": {
+      "name": "java",
+      "version": "17.0.8.1+1",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "request"
+    },
+    "recording": {},
+    "framework": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/resources/GroupResource.java:35"
+                        }
+                      ],
+                      "name": "GroupResource",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "resources",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "createGroup",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/repository/GroupRepository.java:17"
+                        }
+                      ],
+                      "name": "GroupRepository",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "setName",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/models/Group.java:17"
+                        },
+                        {
+                          "name": "setOfficeId",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/jersey/groups/models/Group.java:28"
+                        }
+                      ],
+                      "name": "Group",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "models",
+                  "type": "package"
+                }
+              ],
+              "name": "groups",
+              "type": "package"
+            }
+          ],
+          "name": "jersey",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/v1/groups"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "/* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)"
+        }
+      ]
+    }
+  ]
+}

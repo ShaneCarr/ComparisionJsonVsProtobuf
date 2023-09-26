@@ -1,0 +1,6 @@
+com.jersey
+com.jersey.auth
+com.jersey.config
+com.jersey.groups.models
+com.jersey.groups.repository
+com.jersey.groups.resources

@@ -1,0 +1,2 @@
+Syntax error found near Identifier (INTO Clause): /* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (?, ?)
+Syntax error found near Identifier (INTO Clause): /* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)

@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "POST /api/v1/groups",
+    "callee": "com/jersey"
+  },
+  {
+    "caller": "com/jersey",
+    "callee": "/* GroupDbo.createGroup */ INSERT INTO public.group (name, officeid) VALUES (?, ?)"
+  }
+]

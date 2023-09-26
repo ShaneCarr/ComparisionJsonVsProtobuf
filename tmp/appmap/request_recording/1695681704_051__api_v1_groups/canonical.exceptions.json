@@ -1,0 +1,21 @@
+[
+  {
+    "class": "org.jdbi.v3.core.statement.UnableToCreateStatementException",
+    "message": "Missing named parameter 'name' in binding:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]} [statement:\"/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (:name, :officeId)\", arguments:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]}]",
+    "stack": [
+      "ArgumentBinder.java:170",
+      "com/jersey/groups/repository/GroupRepository.java:17",
+      "com/jersey/groups/resources/GroupResource.java:35"
+    ],
+    "location": "ArgumentBinder.java:170"
+  },
+  {
+    "class": "org.jdbi.v3.core.statement.UnableToCreateStatementException",
+    "message": "Missing named parameter 'name' in binding:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]} [statement:\"/* GroupDbo.createGroup */ INSERT INTO group (name, officeid) VALUES (:name, :officeId)\", arguments:{positional:{}, named:{}, finder:[{lazy bean property arguments \"com.jersey.groups.models.Group@3b93af3\"}]}]",
+    "stack": [
+      "ArgumentBinder.java:170",
+      "com/jersey/groups/resources/GroupResource.java:35"
+    ],
+    "location": "ArgumentBinder.java:170"
+  }
+]

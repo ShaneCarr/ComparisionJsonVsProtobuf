@@ -2,6 +2,9 @@ package com.jersey.groups.resources;
 
 
 import com.jersey.groups.models.Group;
+import com.jersey.groups.repository.GroupDbo;
+import com.jersey.groups.repository.GroupRepository;
+
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
@@ -20,9 +23,17 @@ import org.apache.commons.lang3.NotImplementedException;
 public class GroupResource {
 
 
+    private GroupRepository repository;
+
+    public GroupResource(GroupRepository repository) {
+        this.repository = repository;
+
+    }
+
     @POST
     public Response createGroup(Group group) {
-        throw new NotImplementedException();
+        repository.createGroup(group);
+        return Response.ok().build();
     }
 
     @POST

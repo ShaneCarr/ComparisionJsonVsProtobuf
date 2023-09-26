@@ -1,10 +1,7 @@
 package com.jersey.groups.repository;
 
-import org.jdbi.v3.sqlobject.statement.SqlQuery;
-import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 
 import com.jersey.groups.models.Group;
-import com.jersey.groups.repository.GroupDbo;
 
 import java.util.List;
 
@@ -16,25 +13,23 @@ public class GroupRepository {
         this.groupDbo = groupDbo;
     }
 
-    void createGroup(Group group) {
-
+    public void createGroup(Group group) {
+        groupDbo.createGroup(group);
     }
 
-    void updateGroup(Group group) {
-
+    public void updateGroup(Group group) {
+        groupDbo.updateGroup(group);
     }
 
-    Group getGroupById(long id){
-
+    public Group getGroupById(long id){
+        return groupDbo.getGroupById(id);
     }
 
-    List<Group> getAllGroups(){
-
+    public List<Group> getAllGroups(){
+        return groupDbo.getAllGroups();
     }
 
-    void deleteGroup(long id){
-
+    public void deleteGroup(long id){
+        groupDbo.deleteGroup(id);
     }
-
-    // Add additional queries or updates as needed
 }

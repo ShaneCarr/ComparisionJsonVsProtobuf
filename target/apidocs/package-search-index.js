@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.jersey"},{"l":"com.jersey.auth"},{"l":"com.jersey.config"},{"l":"com.jersey.groups.models"},{"l":"com.jersey.groups.repository"},{"l":"com.jersey.groups.resources"}];updateSearchResults();

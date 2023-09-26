@@ -1,0 +1,5 @@
+[
+  "com/jersey/groups/models",
+  "com/jersey/groups/repository",
+  "com/jersey/groups/resources"
+]

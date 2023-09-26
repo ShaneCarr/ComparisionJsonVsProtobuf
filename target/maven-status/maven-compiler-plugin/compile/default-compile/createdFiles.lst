@@ -2,8 +2,10 @@ com/jersey/config/ApplicationConfiguration.class
 com/jersey/groups/models/Feature.class
 com/jersey/auth/AppBasicAuthenticator.class
 com/jersey/groups/models/FeatureConfiguration.class
+com/jersey/groups/repository/GroupDbo.class
 com/jersey/groups/resources/GroupResource.class
 com/jersey/config/ReadOnlyDatabaseConfiguration.class
+com/jersey/groups/repository/GroupRepository.class
 com/jersey/groups/resources/GroupFeatureConfigurationResource.class
 com/jersey/auth/User.class
 com/jersey/config/ReadWriteDatabaseConfiguration.class

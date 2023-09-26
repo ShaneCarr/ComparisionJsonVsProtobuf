@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.jersey.resources.GroupResourceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.996 s <<< FAILURE! - in com.jersey.resources.GroupResourceTest
-com.jersey.resources.GroupResourceTest  Time elapsed: 6.995 s  <<< ERROR!
-java.lang.NoSuchMethodError: liquibase.logging.core.AbstractLogger: method 'void <init>()' not found
-	at com.jersey.resources.GroupResourceTest.<clinit>(GroupResourceTest.java:24)
-

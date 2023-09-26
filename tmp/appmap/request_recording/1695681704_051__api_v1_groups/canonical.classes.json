@@ -1,0 +1,4 @@
+[
+  "com/jersey/groups/repository/GroupRepository",
+  "com/jersey/groups/resources/GroupResource"
+]

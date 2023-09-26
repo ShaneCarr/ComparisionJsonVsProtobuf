@@ -141,11 +141,6 @@
   </repositories>
   <dependencies>
     <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>42.6.0</version>
-  </dependency>
-    <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>postgresql</artifactId>
       <version>1.18.1</version>
@@ -338,7 +333,7 @@
     <mainClass>com.jersey.Main</mainClass>
     <dropwizard.version>4.0.0</dropwizard.version>
     <maven.compiler.source>17</maven.compiler.source>
-    <testcontainers.version>1.18.1</testcontainers.version>
+    <testcontainers.version>1.19.0</testcontainers.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <powermock.version>2.0.7</powermock.version>
     <assertj.version>3.17.2</assertj.version>
